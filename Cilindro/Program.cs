@@ -23,5 +23,9 @@ namespace Cilindro
         {
             return PI * (float)Math.Pow(raio,2) * altura;
         }
+        float areaDaSuperficie(float altura, float raio)
+        {
+            return 2 * PI * raio * (raio + altura);
+        }
     }
 }
