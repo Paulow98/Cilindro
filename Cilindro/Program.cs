@@ -17,13 +17,17 @@ namespace Cilindro
             a = Convert.ToSingle(Console.ReadLine());
             Console.Write("\nDigite o raio do cilindro: ");
             r = Convert.ToSingle(Console.ReadLine());
+
+            Console.WriteLine("\n Volume:" + volume(a, r) + "\n Area da Superficie:" + areaDaSuperficie(a, r));
+
+            Console.ReadKey();
         }
 
-        float volume(float altura, float raio)
+        static float volume(float altura, float raio)
         {
             return PI * (float)Math.Pow(raio,2) * altura;
         }
-        float areaDaSuperficie(float altura, float raio)
+        static float areaDaSuperficie(float altura, float raio)
         {
             return 2 * PI * raio * (raio + altura);
         }
