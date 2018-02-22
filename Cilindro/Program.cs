@@ -8,11 +8,10 @@ namespace Cilindro
 {
     class Program
     {
-        const float PI = 3.1415926f;
         static void Main(string[] args)
         {
-            float a, r;
-            
+            double a, r;
+
             Console.Write("Digite a altura do cilindro:");
             a = Convert.ToSingle(Console.ReadLine());
             Console.Write("\nDigite o raio do cilindro: ");
@@ -23,13 +22,13 @@ namespace Cilindro
             Console.ReadKey();
         }
 
-        static float volume(float altura, float raio)
+        static double volume(double altura, double raio)
         {
-            return PI * (float)Math.Pow(raio,2) * altura;
+            return Math.PI * Math.Pow(raio, 2) * altura;
         }
-        static float areaDaSuperficie(float altura, float raio)
+        static double areaDaSuperficie(double altura, double raio)
         {
-            return 2 * PI * raio * (raio + altura);
+            return 2 * Math.PI * raio * (raio + altura);
         }
     }
 }
